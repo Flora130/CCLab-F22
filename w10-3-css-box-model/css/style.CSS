@@ -1,0 +1,45 @@
+body {
+    color: purple;
+    background-color: grey;
+    margin: 20px;
+
+}
+
+
+
+.box {
+    color: red;
+    background-color: antiquewhite;
+    width: 180px;
+    height: 100px;
+    padding: 5px;
+    border: solid blueviolet;
+    border-width: 5px;
+    /* margin: 20px; */
+}
+
+#special-box {
+    background-color: aqua;
+    position: fixed;
+    right: 100px;
+    top: 100px;
+    /* display: block; */
+}
+
+.title {
+    background-color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.dsc {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-color: azure;
+
+}
+
+body,
+h3,
+p {
+    margin: 5;
+}
