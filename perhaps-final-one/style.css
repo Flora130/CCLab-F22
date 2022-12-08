@@ -1,0 +1,170 @@
+html,
+body {
+  background-image:
+    url("assets/images/background.jpg");
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  margin: 30px;
+  text-align-last: center;
+
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.button1 {
+  color: red;
+  font-size: 30px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  background-image: url("assets/images/red.png");
+  background-size: cover;
+}
+
+.button2 {
+  /* color: greenyellow; */
+  font-size: 30px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  background-image: url("assets/images/green.jpeg");
+  background-size: cover;
+  text-align: center;
+}
+
+.button3 {
+  color: blue;
+  font-size: 30px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 42%;
+  left: 60%;
+  background-image: url("assets/images/blue.jpeg");
+  background-size: cover;
+}
+
+.button4 {
+  color: violet;
+  font-size: 20px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 45%;
+  left: 80%;
+  background-image: url("assets/images/purple.jpeg");
+  background-size: cover;
+}
+
+.red {
+  color: red;
+  font-size: 15px;
+}
+
+.blue {
+  color: blue;
+  font-size: 15px;
+}
+
+.green {
+  color: green;
+  font-size: 15px;
+}
+
+.purple {
+  color: purple;
+  font-size: 15px;
+}
+
+#canvasContainer {
+  position: absolute;
+  left: 28%;
+  top: 10%;
+}
+
+.leftRed {
+  background-image: url("assets/images/red.png");
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 30%;
+  left: 0%;
+}
+
+.rightRed {
+  background-image: url("assets/images/red.png");
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 30%;
+  right: 0%;
+}
+
+.leftPurple {
+  background-image: url("assets/images/purple.jpeg");
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 30%;
+  left: 0%;
+}
+
+.rightPurple {
+  background-image: url("assets/images/purple.jpeg");
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 30%;
+  right: 0%;
+}
+
+.leftGreen {
+  background-image: url("assets/images/green.jpeg");
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 30%;
+  left: 0%;
+}
+
+.rightGreen {
+  background-image: url("assets/images/green.jpeg");
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 30%;
+  right: 0%;
+}
+
+.leftBlue {
+  background-image: url("assets/images/blue.jpeg");
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 30%;
+  left: 0%;
+}
+
+.rightBlue {
+  background-image: url("assets/images/blue.jpeg");
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 30%;
+  right: 0%;
+}
