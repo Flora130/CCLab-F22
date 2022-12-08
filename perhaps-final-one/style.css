@@ -66,6 +66,7 @@ h1 {
 .red {
   color: red;
   font-size: 15px;
+  /* put the letter on the top of the button */
 }
 
 .blue {
