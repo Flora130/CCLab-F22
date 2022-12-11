@@ -10,7 +10,7 @@ function preload() {
 
 
 function setup() {
-    let canvas = createCanvas(700, 600);
+    let canvas = createCanvas(750, 750);
     canvas.parent("canvasContainer");
     cam = createCapture(VIDEO);
     cam.hide();
@@ -20,7 +20,7 @@ function setup() {
 
 function draw() {
     cam.loadPixels();
-    let gridSize = 6;
+    let gridSize = 8;
 
     noStroke();
     for (let y = 0; y < cam.height; y += gridSize) {
@@ -36,7 +36,7 @@ function draw() {
                 constrain(map(avg, 0, 255, 0, tiles.length), 0, tiles.length - 1)
             );
 
-            let newX = map(x, 0, cam.width, 0, width);
+            let newX = map(x, 0, cam.width, width, 0);
             let newY = map(y, 0, cam.height, 0, height);
 
             //fill(255, 0, 0);
