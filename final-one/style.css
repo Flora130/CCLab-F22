@@ -10,58 +10,10 @@ h1 {
   font-size: 50px;
   margin: 30px;
   text-align-last: center;
-
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
-.button1 {
-  color: red;
-  font-size: 30px;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 43%;
-  left: 20%;
-  background-image: url("assets/images/red.png");
-  background-size: cover;
-}
 
-.button2 {
-  /* color: greenyellow; */
-  font-size: 30px;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 45%;
-  left: 40%;
-  background-image: url("assets/images/green.jpeg");
-  background-size: cover;
-  text-align: center;
-}
-
-.button3 {
-  color: blue;
-  font-size: 30px;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 45%;
-  left: 60%;
-  background-image: url("assets/images/blue.jpeg");
-  background-size: cover;
-}
-
-.button4 {
-  color: violet;
-  font-size: 20px;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 45%;
-  left: 80%;
-  background-image: url("assets/images/purple.jpeg");
-  background-size: cover;
-}
 
 .red {
   color: red;
@@ -69,7 +21,7 @@ h1 {
   position: absolute;
   top: 45%;
   left: 25%;
-  /* put the letter on the top of the button */
+
 }
 
 .blue {

@@ -20,7 +20,7 @@ function setup() {
 
 function draw() {
     cam.loadPixels();
-    let gridSize = 10;
+    let gridSize = 6;
 
     noStroke();
     for (let y = 0; y < cam.height; y += gridSize) {
@@ -39,10 +39,9 @@ function draw() {
             let newX = map(x, 0, cam.width, width, 0);
             let newY = map(y, 0, cam.height, 0, height);
 
-            //fill(255, 0, 0);
-            //text(chars[cIndex], newX, newY);
+
             image(tiles[cIndex], newX, newY);
-            //image(tiles[1], newX, newY);
+
         }
     }
 }
