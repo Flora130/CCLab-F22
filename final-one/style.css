@@ -10,15 +10,20 @@ h1 {
   font-size: 50px;
   margin: 30px;
   text-align-last: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif */
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
 }
 
 
 
 .red {
   color: red;
-  font-size: 15px;
+  font-size: 30px;
   position: absolute;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
   top: 45%;
   left: 25%;
 
@@ -26,111 +31,39 @@ h1 {
 
 .blue {
   color: rgb(69, 204, 219);
-  font-size: 15px;
+  font-size: 30px;
   position: absolute;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
   top: 45%;
   left: 63%;
 }
 
 .green {
   color: yellowgreen;
-  font-size: 15px;
+  font-size: 30px;
   position: absolute;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
   top: 55%;
   left: 38%;
 }
 
 .purple {
   color: violet;
-  font-size: 15px;
+  font-size: 30px;
   position: absolute;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
   top: 56%;
   left: 77%;
 }
 
 
-.leftRed {
-  background-image: url("assets/images/red.png");
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  top: 30%;
-  left: 0%;
-}
-
-.rightRed {
-  background-image: url("assets/images/red.png");
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  top: 30%;
-  right: 0%;
-}
-
-.leftPurple {
-  background-image: url("assets/images/purple.jpeg");
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  top: 30%;
-  left: 0%;
-}
-
-.rightPurple {
-  background-image: url("assets/images/purple.jpeg");
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  top: 30%;
-  right: 0%;
-}
-
-.leftGreen {
-  background-image: url("assets/images/green.jpeg");
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  top: 30%;
-  left: 0%;
-}
-
-.rightGreen {
-  background-image: url("assets/images/green.jpeg");
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  top: 30%;
-  right: 0%;
-}
-
-.leftBlue {
-  background-image: url("assets/images/blue.jpeg");
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  top: 30%;
-  left: 0%;
-}
-
-.rightBlue {
-  background-image: url("assets/images/blue.jpeg");
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  top: 30%;
-  right: 0%;
-}
 
 #canvasContainer {
   position: absolute;
-  left: 25%;
-  top: 5%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

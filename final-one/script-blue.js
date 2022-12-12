@@ -1,30 +1,37 @@
 let tiles = [];
 let cam;
+let bgImg;
 
 function preload() {
   tiles.push(loadImage("assets/images/blue1.jpeg"));
   tiles.push(loadImage("assets/images/blue2.jpeg"));
   tiles.push(loadImage("assets/images/blue3.jpeg"));
+  bgImg = loadImage("assets/images/blue.jpeg");
   // sound = loadSound("assets/beat.mp3");
 }
 
 
 function setup() {
-  let canvas = createCanvas(750, 750);
+  let canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent("canvasContainer");
   cam = createCapture(VIDEO);
   cam.hide();
-  //sound.play();
-  background(0);
+
+  image(bgImg, 0, 0, width, height);
 }
 
 function draw() {
+  background(0, 10);
+
   cam.loadPixels();
   let gridSize = 10;
+  // image(bgImg, 0, 0, width, height);
 
-  noStroke();
-  for (let y = 0; y < cam.height; y += gridSize) {
-    for (let x = 0; x < cam.width; x += gridSize) {
+  noFill();
+  stroke(0, 80, 255);
+  for (let x = 0; x < cam.width; x += gridSize) {
+    beginShape();
+    for (let y = 0; y < cam.height; y += gridSize) {
       let index = (x + y * cam.width) * 4;
 
       let r = cam.pixels[index + 0];
@@ -32,16 +39,12 @@ function draw() {
       let b = cam.pixels[index + 2];
       let avg = (r + g + b) / 3;
 
-      let cIndex = floor(
-        constrain(map(avg, 0, 255, 0, tiles.length), 0, tiles.length - 1)
-      );
+      let xAdj = map(avg, 0, 150, 0, 25);
 
-      let newX = map(x, 0, cam.width, width, 0);
+      let newX = map(x + xAdj, 0, cam.width, width, 0);
       let newY = map(y, 0, cam.height, 0, height);
-
-
-      image(tiles[cIndex], newX, newY);
-
+      vertex(newX, newY);
     }
+    endShape();
   }
 }
